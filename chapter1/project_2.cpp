@@ -44,7 +44,7 @@ int main(int argc, char** argv){
     }
     int n = atoi(argv[1]);
 
-    if(n >= 32){
+    if(n > 32){
         printf("too large n!\n");
         return 0;
     }
@@ -61,7 +61,7 @@ int main(int argc, char** argv){
         bitset<32> bit_string_2(b);
         cout << "       " << a << endl;
         cout << "       " << b << endl;
-        cout << "-------------------------------" << endl;
+        cout << "---------------------------------------" << endl;
         cout << "AND:   " << to_str(AND(bit_string_1, bit_string_2),n) << endl;
         cout << "OR:    " << to_str(OR(bit_string_1, bit_string_2),n) << endl;
         cout << "XOR    " << to_str(XOR(bit_string_1, bit_string_2),n) << endl;
