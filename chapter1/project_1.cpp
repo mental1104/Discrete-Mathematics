@@ -37,36 +37,25 @@ bool biconditional_val(bool a, bool b){
         return 'F';
 }
 
-int main(){
+int main(int argc, char** argv){
+    if(argc!=3){
+        printf("You should enter two truth value.\n");
+        return 0;
+    }
     int x, y;
-    printf("> Enter a truth value (0/1): \n");
-
-     while(cin >> x)
-        if(x==0 || x==1)
-            break;
-        else
-            printf("> Please enter (0/1). \n");
-        
+    x = atoi(argv[1]);
+    y = atoi(argv[2]);
+    printf("%d %d\n",x,y);
+    if(x==0 || x==1 || y==0 || y==1){
+        printf("The truth value of propostion p and q is set to \n%c %c. \n", transform(x),transform(y));
+        printf("conjunction:    %c\n",transform(conjunction(x,y)));
+        printf("disjunction:    %c\n",transform(disjunction(x,y)));
+        printf("exclusive or:   %c\n",transform(exclusive_or(x,y)));
+        printf("conditional:    %c\n",transform(conditional_val(x,y)));
+        printf("biconditional:  %c\n",transform(biconditional_val(x,y)));
+    } else 
+        printf("You should enter (0/1).\n");
     
-    printf("The truth value of propostion p is set to %c. \n", transform(x));
-
-    printf("> Enter a truth value (0/1): \n");
-
-    while(cin >> y)
-        if(y==0 || y==1)
-            break;
-        else
-            printf("> Please enter (0/1). \n");
-        
     
-    printf("The truth value of propostion q is set to %c. \n", transform(y));
-
-    printf("\n\nThe truth value given is\n%c and %c\n", transform(x), transform(y));
-    printf("conjunction:    %c\n",transform(conjunction(x,y)));
-    printf("disjunction:    %c\n",transform(disjunction(x,y)));
-    printf("exclusive or:   %c\n",transform(exclusive_or(x,y)));
-    printf("conditional:    %c\n",transform(conditional_val(x,y)));
-    printf("biconditional:  %c\n",transform(biconditional_val(x,y)));
-
     return 0;
 }
