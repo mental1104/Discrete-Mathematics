@@ -24,7 +24,7 @@ Example:
 ![](./pic/2.png)
 
 
-### 3.Give a compound proposition, determine whether it is satisfiable by checking its truth value for all positive assignments of truth values to its propositional variables
+### 3.Give a compound proposition, determine whether it is satisfiable by checking its truth value for all positive assignments of truth values to its propositional variables
 
 [code](./project_3.cpp)  
 
