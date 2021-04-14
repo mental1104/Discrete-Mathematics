@@ -29,7 +29,7 @@ equivalence:    0
 
 2. Given two bit strings of length n, find the bitwise AND, bitwise OR, and bitwise XOR of these strings.  
 
-[code](./project_2.cpp)  
+[code](./project_2.hpp)  
 Usage:   
 `./a.out 2`
 
@@ -56,7 +56,7 @@ XOR    11111100111100001100000000000011000111
 
 3. Give a compound proposition, determine whether it is satisfiable by checking its truth value for all positive assignments of truth values to its propositional variables
 
-[code](./project_3.cpp)  
+[code](./project_3.hpp)  
 
 Usage:  `./a.out 3`
 > negation '!'  
