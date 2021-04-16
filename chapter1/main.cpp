@@ -3,6 +3,7 @@
 #include "./project_2.hpp"
 #include "./project_3.hpp"
 #include "./project_4.hpp"
+#include "./project_5.hpp"
 
 using namespace::std;
 
@@ -59,6 +60,11 @@ void test_4(){
 }
 
 void test_5(){
+    printf("Enter the breadth and length of the chomp.\n> ");
+    int m, n;
+    scanf("%d %d",&m,&n);
+    Project_1_5 temp(m,n);
+    temp.play();
     return;
 }
 

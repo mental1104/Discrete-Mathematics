@@ -217,4 +217,58 @@ Conjunction of 0.300000 and 0.400000 is 0.300000.
 Disjunction of 0.300000 and 0.400000 is 0.400000.
 ```
 
+5. Given positive integers m and n, interactively play the game of Chomp  
+
+[code](./project_5.hpp)  
+Usage: `./a.out 5`  
+Example:  
+```bash
+espeon@Espeon:~/work/discrete/chapter1$ ./a.out 5
+Enter the breadth and length of the chomp.
+> 10 10
+--------------CHOMP--------------
+POOOOOOOOO
+OOOOOOOOOO
+OOOOOOOOOO
+OOOOOOOOOO
+OOOOOOOOOO
+OOOOOOOOOO
+OOOOOOOOOO
+OOOOOOOOOO
+OOOOOOOOOO
+OOOOOOOOOO
+--------------CHOMP--------------
+You should eat the rest of chomp(1<=x<=m and 1<=y<=n)
+For Player A:
+> 1 2
+--------------CHOMP--------------
+PXXXXXXXXX
+OXXXXXXXXX
+OXXXXXXXXX
+OXXXXXXXXX
+OXXXXXXXXX
+OXXXXXXXXX
+OXXXXXXXXX
+OXXXXXXXXX
+OXXXXXXXXX
+OXXXXXXXXX
+--------------CHOMP--------------
+For Player B:
+> 2 1
+--------------CHOMP--------------
+PXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+--------------CHOMP--------------
+For Player A:
+> 1 1
+Player A Lost
+```
 
