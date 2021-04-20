@@ -125,9 +125,9 @@ Project_1_3::dfs(int num){
         truth_table.push_back(temp);
         return;
     }
-    value[total[num]] = true;
-    dfs(num+1);
     value[total[num]] = false;
+    dfs(num+1);
+    value[total[num]] = true;
     dfs(num+1);
 }
 
