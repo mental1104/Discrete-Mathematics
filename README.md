@@ -7,5 +7,6 @@ Content:
 
 [Chapter1: The Foundation: Logic and Proofs](./chapter1)  
 
+[Chapter2: Chapter 2 Basic Structures: Sets, Functions, Sequences, Sums, and Matrices](./chapter2)
 
 
