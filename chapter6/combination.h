@@ -52,14 +52,18 @@ R_Combination::next(){//This code is buggy!!!!!!!!!
     int n = origin.size();
     int r = curr.size();
     int i = r;
-    while(curr[i] = n-r+i)
+    int index = i-1;
+    while(curr[index] == n-r+i){
         i = i-1;
-    curr[i] = curr[i]+1;
-    for(int j = i+1; j<=r; j++)
-        curr[j] = curr[i] + j -i;
+        index = index-1;
+    }
+    curr[index] = curr[index]+1;
+
+    int j = i+1;
+    int jndex = index+1;
+    for(; jndex<=r; j++, jndex++)
+        curr[jndex] = curr[index] + j -i;
     
-    for(int i = 0; i<curr.size(); i++)
-        curr[i] = curr[i+1];
 }
 
 void 
